@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6, .title, .title a, .title2, {
     height:480px;
     margin:0 auto;
     background-size:100%;
-    background-image:url('https://static.pexels.com/photos/66100/pexels-photo-66100.jpeg');
+    background-image:url('http://static.pexels.com/photos/66100/pexels-photo-66100.jpeg');
     z-index:1;
     border-top:1px solid #eee;
     border-left:1px solid #eee;
