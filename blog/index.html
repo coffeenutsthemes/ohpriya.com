@@ -91,8 +91,9 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 <body data-urlencoded-name="ohpriya/blog/" class="clearfix" onselectstart="return false" ondragstart="return false" draggable="false">
 	
 <div id="template">
-<div class="topbar">
-    <div class="moto"><a href="/blog/">Finding My Adventure</a> / 
+<div class="topbar">	
+	{% if page.blog_index != 'true' %}
+    <div class="moto"><a href="{{ page.url }}">{{ page.title }}</a> / 
     <span class="bloglinks">
             <a href="/">Main Page</a> &nbsp;&bull;&nbsp;
             <a href="/about">About</a> &nbsp;&bull;&nbsp;
@@ -100,13 +101,11 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 	    <a href="http://ohpriya.com/blog/atom.xml">Subscribe</a>
     </span>
     </div>
+	{% endif %}
+
 </div>
 
-		{% if page.blog_index != 'true' %}
-	<div class="breadcrumbs">
-	<strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
-	</div>
-	{% endif %}
+	
 
 {% for post in site.posts %}
 <div id="blog-content">
