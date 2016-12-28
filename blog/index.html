@@ -100,7 +100,18 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
     </div>
 </div>
 	
-
+{% assign index = true %}
+<div itemscope itemtype="http://schema.org/Blog">
+{% for post in paginator.posts %}
+{% unless post.redirect %}
+{% assign content = post.content %}
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        {% include article.html %}
+    </article>
+{% endunless %}
+{% endfor %}
+</div>
+	
 {% for post in site.posts %}
 <div id="blog-content">
 	<article itemscope itemtype="http://schema.org/BlogPosting">
@@ -108,6 +119,7 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 		
 		<div class="post-content">
 			{{ post.content }}
+			
 			<!--more-->
 		</div>
 
