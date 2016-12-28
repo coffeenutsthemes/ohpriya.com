@@ -3,7 +3,6 @@ layout: null
 title: Finding My Adventure
 permalink: "/blog/"
 lang: en
-home: yes
 ---
 
 <!DOCTYPE html>
@@ -103,15 +102,14 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
     </div>
 </div>
 
-{% assign index = true %}	
+
 {% for post in site.posts %}
 <div id="blog-content">
 	<article itemscope itemtype="http://schema.org/BlogPosting">
-		<h2><a target="_blank" href="{{ post.url }}">{{ post.title }}</a></h2>
+		<h2><a target="_blank" href="{{ page.url }}">{{ post.title }}</a></h2>
 		
 		<div class="post-content">
-			{{ post.content }}
-			{% assign content = post.content %}
+			{{ content }}
 			
 			<!--more-->
 		</div>
