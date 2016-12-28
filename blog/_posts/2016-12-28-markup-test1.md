@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: post.html
 title:  "Welcome and Getting Started"
 date:   2016-12-28
 tags: ['example', 'welcome']
-author: "Your Name"
+author: "Prryns"
 ---
 
 Welcome to this jekyll theme!  
