@@ -20,7 +20,6 @@ kramdown:
 
 # Jekyll Settings
 permalink: /blog/:title
-paginate: 20
 paginate_path: "/blog/page/:num"
 category_dir: categories
 
