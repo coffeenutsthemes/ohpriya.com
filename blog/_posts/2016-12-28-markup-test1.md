@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome and Getting Started"
 date:   2016-12-28
-permalink: /post/test1
+permalink: /blog/post/dec/test1
 tags: ['example', 'welcome']
 author: "Prryns"
 ---
