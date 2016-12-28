@@ -19,7 +19,12 @@ kramdown:
   hard_wrap: false
 
 # Jekyll Settings
-permalink: /blog/:title
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:date/:title/
+    
 paginate_path: "/blog/page/:num"
 category_dir: categories
 
