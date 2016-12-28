@@ -1,10 +1,18 @@
 ---
-layout: post.html
+layout: post
 title:  "Welcome and Getting Started"
 date:   2016-12-28
+permalink: test1
 tags: ['example', 'welcome']
 author: "Prryns"
 ---
 
-Welcome to this jekyll theme!  
-Edit `_config.yml` how you want, and see what happens.....
+Lorem ipsum dolor sit amet, in debet contentiones pri, aliquid scriptorem cu vel, inermis periculis theophrastus at mel. Et qui nibh utamur euismod. Sea in possit legendos, ei eos dicat animal forensibus. Eum ei elitr putant facilis, dolore repudiare deseruisse nec te.
+
+Maiestatis adolescens his in, omnium laoreet eam id. At nec inani putent audire, ius inermis convenire ei. Putent verear regione an duo, vis suas iudico persequeris an. Ea tale assueverit signiferumque nam, cu eum verterem eleifend. Eam enim senserit contentiones te. Rebum antiopam duo an, pro ei consul oblique disputationi. Mel ex quod expetenda, ex qui movet altera qualisque, nam ut luptatum menandri pertinax.
+
+Eos ut expetenda repudiare. Justo voluptaria te quo, sit soluta menandri at, cibo bonorum inermis vix ut. Tota voluptua euripidis has an. Zril dicam cu vis. Sed ut omnes oratio, in iriure impedit blandit has. Vis vocent vidisse aliquid in. Numquam recteque et usu, sit option senserit scribentur eu, viris nominati reprimique at vis.
+
+Quo ut iriure theophrastus, no quem consul adipiscing cum. Eu nec melius laboramus, eu erat luptatum cum. No eum summo apeirian quaerendum. Oportere recteque suavitate te eos, congue utinam complectitur ex mea, an qui mentitum interesset.
+
+Te usu suavitate instructior, et virtute conclusionemque vel. Dolore elaboraret quaerendum qui no. An enim doctus cum. Qui clita virtute te. Partem pertinacia pri ei, meliore rationibus vix eu, unum argumentum temporibus quo id. Vis ne vocent maiorum expetendis, sit an legendos complectitur.
