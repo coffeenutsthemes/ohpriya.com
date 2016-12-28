@@ -98,8 +98,8 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
     </div>
 </div>
 	
-<div id="blog-content">
 {% for post in site.posts %}
+<div id="blog-content">
 	<article itemscope itemtype="http://schema.org/BlogPosting">
 		<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 		
@@ -109,8 +109,9 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 
 		<div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
 	</article>
-{% endfor %}
+
 	</div>
+{% endfor %}
 </div>
 	
 	
