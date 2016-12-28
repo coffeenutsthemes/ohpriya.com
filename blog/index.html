@@ -1,0 +1,18 @@
+---
+layout: nil
+---
+
+
+{% for post in site.posts %}
+<div id="{{ post.date | date: "%F-%H" }}">
+	<article itemscope itemtype="http://schema.org/BlogPosting">
+		<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+		<div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+		
+		<div class="post-content">
+			{{ post.content }}
+		</div>
+
+	</article>
+</div>
+{% endfor %}
