@@ -102,16 +102,21 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
     </div>
 </div>
 
+		{% if page.blog_index != 'true' %}
+	<div class="breadcrumbs">
+	<a href="/blog/">Blog</a> &#155; 
+	<strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
+	</div>
+	{% endif %}
 
 {% for post in site.posts %}
 <div id="blog-content">
 	<article itemscope itemtype="http://schema.org/BlogPosting">
-		<h2><a target="_blank" href="{{ page.url }}">{{ post.title }}</a></h2>
+		<h2><a target="_blank" href="{{ post.url }}">{{ post.title }}</a></h2>
 		
 		<div class="post-content">
-			{{ content }}
-			
-			<!--more-->
+			{{ post.content }}
+	
 		</div>
 
 		<div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
