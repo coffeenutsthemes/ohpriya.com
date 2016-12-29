@@ -171,9 +171,9 @@ h1, h2, h3, h4, h5, h6, .title, .title a, .title2, {
     z-index:-1;
     background-color:rgba(255,255,255,.85);}
 #container {
-    margin:20px auto;
+    margin:20px auto 40px auto;
     width:400px;
-    height:400px;
+    height:460px;
     clear:both;
     z-index:999;
     text-align:center;
