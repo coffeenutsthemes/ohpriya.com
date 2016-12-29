@@ -98,26 +98,19 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 
 {% for post in site.posts %}
 <div id="blog-content">
-<div id="{{ post.date | date: "%F-%H" }}" class="unit whole align-left post">
 	<article itemscope itemtype="http://schema.org/BlogPosting">
-		<h2>{{ post.title }}<br>
-		<small class="chip">{{ post.date | date: "%b %-d, %Y" }}</small>
-		<a class="chip" href="{{ site.url }}{{ site.baseurl }}#{{ post.date | date: "%F-%H" }}"><i class="icon ion-android-share-alt"></i> LINK</a>
-		</h2>
+		<h1>{{ post.title }}</h1>
 		
 		<div class="post-content">
 			{{ post.content }}
 		</div>
-
-		{% if post.author %}
-		<span class="chip" itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<span itemprop="name">Article by {{ post.author }}</span>
-		</span>
-		{% endif %}
+		
+		<div class="post-date">
+			Posted on: {{ post.date | date: "%b %-d, %Y" }}
+		</div>
 
 	</article>
 </div>
-{% endfor %}
 
 
 </div>
