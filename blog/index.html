@@ -87,6 +87,7 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 <body data-urlencoded-name="ohpriya/blog/" class="clearfix" onselectstart="return false" ondragstart="return false" draggable="false">
 	
 <div id="template">
+	
 <div class="topbar">	
 	
     <div class="moto"><a href="/blog/">Finding My Adventure</a> / 
@@ -100,6 +101,23 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 </div>
 
 
+	
+
+{% for post in site.posts %}
+<div id="blog-content">
+	<article itemscope itemtype="http://schema.org/BlogPosting">
+		<h1>{{ post.title }}</h1>
+		
+		<div class="post-content">
+			{{ post.content }}
+		</div>
+		
+		<div class="post-date">
+			Posted on: {{ post.date | date: "%b %-d, %Y" }}
+		</div>
+
+	</article>
+</div>
 
 
 </div>
