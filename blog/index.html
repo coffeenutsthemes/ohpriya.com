@@ -31,7 +31,7 @@ title: Finding My Adventure
 		<h2><a target="_blank" href="{{ post.url }}">{{ post.title }}</a></h2>
 		
 		<div class="post-content">
-			{{ post.content | strip_html | truncatewords: 65 }}
+			{{ post.content }}
 		</div>
 
 		<div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
@@ -41,7 +41,22 @@ title: Finding My Adventure
 {% endfor %}
 
 	
-	
+	  <nav class="bottom-nav">
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="bottom-nav__button" title="show previous">
+                <i class="material-icons" role="presentation">arrow_backward</i>
+              Older
+            </a>
+            {% endif %}
+            {% if paginator.previous_page %}
+            <div class="section-spacer"></div>
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="bottom-nav__button" title="show more">
+              Newer
+                <i class="material-icons" role="presentation">arrow_forward</i>
+              
+            </a>
+            {% endif %}
+          </nav>
 	
 </div>
 	
