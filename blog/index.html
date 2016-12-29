@@ -76,7 +76,7 @@
 <div id="template">
 <div class="topbar">	
 	
-    <div class="moto"><a href="/blog/">{{ page.title }}</a> / 
+    <div class="moto"><a href="/blog/">Finding My Adventure</a> / 
     <span class="bloglinks">
             <a href="/">Main Page</a> &nbsp;&bull;&nbsp;
             <a href="/about">About</a> &nbsp;&bull;&nbsp;
@@ -88,9 +88,7 @@
 
 	
 
- {% for post in paginator.posts %}
-  {% assign words = post.content | number_of_words %}
-    {% if forloop.first %}
+{% for post in site.posts %}
 <div id="blog-content">
 	<article itemscope itemtype="http://schema.org/BlogPosting">
 		<h2><a target="_blank" href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -105,26 +103,7 @@
 	</div>
 
     {% endif %}
-  {% endfor %}
 
-	
-	  <nav class="bottom-nav">
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | relative_url }}" class="bottom-nav__button" title="show previous">
-                <i class="material-icons" role="presentation">arrow_backward</i>
-              Older
-            </a>
-            {% endif %}
-            {% if paginator.previous_page %}
-            <div class="section-spacer"></div>
-            <a href="{{ paginator.previous_page_path | relative_url }}" class="bottom-nav__button" title="show more">
-              Newer
-                <i class="material-icons" role="presentation">arrow_forward</i>
-              
-            </a>
-            {% endif %}
-          </nav>
-	
 </div>
 	
 	
