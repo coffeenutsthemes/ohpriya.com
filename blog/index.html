@@ -1,6 +1,5 @@
 ---
 layout: null
-lang: en
 ---
 
 <!DOCTYPE html>
@@ -89,8 +88,8 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 <div id="template">
 	
 <div class="topbar">	
-	
-    <div class="moto"><a href="/blog/">Finding My Adventure</a> / 
+    <div class="moto">
+	    <a href="/blog/">Finding My Adventure</a> / 
     <span class="bloglinks">
             <a href="/">Main Page</a> &nbsp;&bull;&nbsp;
             <a href="/about">About</a> &nbsp;&bull;&nbsp;
@@ -104,20 +103,12 @@ img {-webkit-touch-callout: none;-webkit-user-select: none;}
 	
 
 {% for post in site.posts %}
-<div id="blog-content">
-	<article itemscope itemtype="http://schema.org/BlogPosting">
-		<h1>{{ post.title }}</h1>
+
 		
 		<div class="post-content">
 			{{ post.content }}
 		</div>
-		
-		<div class="post-date">
-			Posted on: {{ post.date | date: "%b %-d, %Y" }}
-		</div>
 
-	</article>
-</div>
 
 
 </div>
